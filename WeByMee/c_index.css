@@ -1,0 +1,345 @@
+html, body{
+    background-color: white;
+}
+
+.noidung-tieude{
+    max-width: 960px;
+    margin: 0px auto;
+}
+
+#tieude{
+    background-color: #000;
+    z-index: 1;
+}
+
+nav{
+    display: flex;
+    /* làm cho chữ và logo thẳng hàng với nhau */
+    justify-content: space-between;
+    justify-items: center;
+}
+
+#logo{
+    padding: 5px 0px;
+}
+
+#logo img{
+    max-width: 100px;
+    margin: auto;    
+}
+
+ul#luachon-menu li a{
+    color: #ff0000;
+    font-family: 'Anton', sans-serif;
+    background: linear-gradient(to right,#ffffff,#fd6155);
+    -webkit-background-clip:text;
+    color: transparent;
+}
+
+#luachon-menu{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#luachon-menu li{
+    position: relative;
+}
+
+#luachon-menu li a
+{
+    color: #ffffff,#fd6155;
+    display: block ;
+    padding: 40px 20px;
+    text-decoration: none;
+    font-size: larger;
+}
+
+#luachon-menu ul.sub-menu{
+    list-style: none !important;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    padding: 15px 0px;
+    width: 150px;
+    display: none ;
+    z-index: 1;
+}
+
+#luachon-menu li:hover>ul.sub-menu{
+    display: block;
+}
+
+#luachon-menu ul.sub-menu a{
+    padding: 8px 15px;
+    border-bottom: 1px solid rgb(0, 0, 0) ;
+    
+}
+
+#luachon-menu ul.sub-menu li:hover a{
+    
+    border-bottom: 1px solid;
+    border-image-slice: 1 ;
+    border-image-source: linear-gradient(to right,#ffffff,#fd6155);
+}
+
+#luachon-menu ul.sub-menu li:last-child a{
+    border: none ;
+}
+
+#luachon-menu ul.sub-menu ul.sub-menu {
+    left: 149px;
+    top: 0px;
+    border-bottom: 1px solid rgb(255, 0, 0);
+    z-index: 1;
+}
+
+/* Thiết lập border khi hover */
+#luachon-menu>li>a{
+    position: relative;
+}
+
+#luachon-menu>li>a::before{
+    content: "";
+    height: 1px;
+    width: 0px;
+    background: linear-gradient(to right,#ffffff,#fd6155);
+    position: absolute;
+    bottom: 30px;
+    left: 0px;
+    transition: 0.25s;
+    
+}
+
+#luachon-menu>li:hover>a::before{
+    
+    width: 100%;
+}
+
+#product{
+        padding: 0;
+        margin: 0;
+}
+.loader
+{
+    position: relative;
+    width: 10000px;
+    height: 10px;
+    background:#fff ;
+    -webkit-box-reflect: below 0 linear-gradient(transparent, #0005);
+}
+.loader::before
+{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg,#fb0094,#0000ff,#00ff00,#c9c920,#fd7a4d,#fb0094,#0000ff,#00ff00,#c9c920,#fd7a4d);
+    animation: animate 20s linear infinite;
+    background-size: 500%;
+    
+}
+.loader::after
+{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg,#fb0094,#0000ff,#00ff00,#c9c920,#fd7a4d,#fb0094,#0000ff,#00ff00,#c9c920,#fd7a4d);
+    animation: animate 20s linear infinite;
+    background-size: 500%;
+    filter: blur(20px);
+}
+@keyframes animate
+{
+    0%
+    {
+    
+        background-position: 0 0 ;
+    }
+    0%
+    {
+    
+        background-position: 500% 0 ;
+    }
+}
+.wrapper-Body{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.wrapper-body{
+    padding: 10px 0px;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: #111;
+    line-height: 1.25;
+
+}
+.tieude-sanpham{
+    text-align: center;
+    margin: 40px;
+    background: linear-gradient(to right,#ff0000,#000000);
+    -webkit-background-clip:text;
+    color: transparent;
+    
+}
+
+#sanpham{
+    font-size: 18px;
+    font-family: 'Anton', sans-serif;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: 1px solid ;
+    display: inline-block;
+    border: 2px solid;
+    border-image-slice: 1 ;
+    border-image-source: linear-gradient(to left,#fd6155,#000000,#fd6155);
+    
+    
+}
+
+ul.hang1{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+ul.hang1 li{
+    flex-basis: 25%;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+
+ul.hang1 li img{
+    max-width: 100%;
+    height: auto;
+}
+
+ul.hang1 li .hang1-info .hang1-thumb
+{
+    display: block;
+}
+.hang1-info{
+    padding: 40px 0px;
+}
+ul.hang1 li .hang1-info a{
+    display: block;
+    text-decoration: none;
+}
+.hang1-danhmuc a{
+    font-family: 'Dancing Script', cursive;
+}
+
+ul.hang1 li .tensp{
+display: block;
+text-decoration: none;
+}
+ul.hang1 li .hang1-info .hang1-danhmuc{
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #000000;padding: 3px 0px;
+}
+
+ul.hang1 li .hang1-info .hang1-name{
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+    color: #000000;
+    padding: 3px 0px;font-weight: 300; 
+}
+
+#sp{
+    width: auto;
+}
+ul.hang1 li .hang1-info .hang1-price{
+    color: rgb(253, 0, 0);
+    padding: 5px 0px;
+    font-weight: 600;
+}
+ul.hang1 li .hang1-top
+{
+    position: relative;
+    overflow: hidden;
+}
+.hang1-top a.mua-ngay{
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff  ;
+    padding: 10px 0px;
+    position: absolute;
+    width: 100%;
+}
+button {
+    border-radius: 5px;
+    border: none;
+    padding: 15px 30px;
+    font-size: 24px;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.3s ease all;
+    line-height: 1;
+    display: flex;
+    background-color: DodgerBlue;
+    color: white;
+  }
+ button:hover {
+    background: #eee;
+    color: #000;
+  }
+ .icon {
+    margin-right: 8px;
+  }
+ .reset {
+    font-size: 12px;
+    padding: 8px 16px;
+    margin: 50px auto 0;
+  }
+  #clockdiv h2.sieusale{
+    font-family:'Roboto';
+    font-size: 100px;
+    color:red;
+    text-align:center;
+    font-size:40px;margin:0 0 16px;
+    background: linear-gradient(to right,#ff0000,#000000);
+    -webkit-background-clip:text;
+    color: transparent;
+}
+#clockdiv{
+    font-family: 'Open Sans', sans-serif;
+    color:rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    display:inline-block;
+    font-weight:100;
+    text-align:center;
+    font-size:30px;
+    margin:20px auto;
+    padding:20px;width:100%;
+    
+}
+#clockdiv > div{
+    padding:10px 35px;
+    border-radius:3px;
+    background-color: #fd6155;
+    display:inline-block;
+}
+#clockdiv div > span{
+    padding:0;
+    border-radius:3px;
+    font-size:58px;
+    display:inline-block
+}
+#clockdiv .smalltext{
+    padding-top:5px;
+    font-size:16px;
+}

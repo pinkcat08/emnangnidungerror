@@ -1,0 +1,268 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+html, body{
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    min-height: 100vh;
+
+}
+.left ul li h2
+{
+    padding: 20px 0 ;
+    color: rgb(1, 255, 1);
+    margin: 0 0px;
+    position: relative;
+    transform: skewY(345deg)translateY(-200px) ;
+    animation: animateColor1 10s linear infinite;
+}
+
+section
+{
+    max-width: 100%;
+    min-height: 100%;
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #111;
+}
+
+.text
+{
+    position: relative;
+    /* padding-left: 100%; */
+    transform: skewY(345deg)translateY(-200px) ;
+    /* di chuyển */
+    animation: animateColor 0.5s linear infinite;
+}
+
+@keyframes animateColor
+{
+    0%
+    {   
+        transform: translate(0,-20%);
+        filter: hue-rotate(-0.25rad);
+    }
+    100%
+    {
+        transform: translate(0,0);
+        filter: hue-rotate(3.142rad);
+    }
+}
+.text h2{
+    position: relative;
+    width: 100%;
+    font-size: 4em;
+    color: #fff;
+    pointer-events: none;
+    line-height: 1em;
+    white-space:nowrap ;
+    /* text-shadow: calc(var(--x)) 100px 0 rgba(255,255,255,0.1);
+    transform: translateX(calc(0% - var(--x) * 2)); */
+}
+.text h2 span
+{
+    color: #0f0;
+    margin: 0 0px;
+}
+.text h2 span:nth-child(even)
+{
+    color: transparent;
+    -webkit-text-stroke: 2px #fff;
+}
+.noidung{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background:rgb(75, 73, 73) ;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0,1);
+}
+
+ul {
+    list-style: none;
+    
+}
+h4 , h2 , a
+{
+    color: #fff;
+}
+a{
+    text-decoration: none
+}
+.left{
+    position:relative;
+    background-color: #111;
+    padding: 40px 30px;
+    
+}
+.thongtin{
+    padding-left: 50px;
+}
+.noidungleft li
+{
+    
+    display: inline;
+    line-height: 35px;
+    letter-spacing: 1px;
+
+    
+}
+.fb , .gm
+{
+    display: flex;
+}
+
+.noidungleft a
+{
+    color: rgb(255, 255, 255);
+}
+.noidungleft a:hover
+{
+    color: #0f0;
+    margin: 0 0px;
+    position: relative;
+    transform: skewY(345deg)translateY(-200px) ;
+    animation: animateColor1 0.5s linear infinite;
+}
+@keyframes animateColor1
+{
+    0%
+    {   
+        transform: translate(0,0);
+        filter: hue-rotate(-0.25rad);
+    }
+    100%
+    {
+        transform: translate(0,0);
+        filter: hue-rotate(3.142rad);
+    }
+}
+.left .gtbt
+{
+    padding-top: 20px;
+    text-transform: uppercase;
+    font-size: larger;
+}
+.right{
+    position:relative;
+    background-color: #fff;
+    padding: 40px 30px;
+}
+.img{
+    max-width: 200px; 
+    
+}
+.hinh{
+    padding-left: 50px;
+}
+.right
+{
+    background: rgb(255, 255, 255);
+
+}
+.noidungright
+{
+    display: inline;
+    line-height: 35px;
+    letter-spacing: 1px;
+    /* text-transform: uppercase; */
+
+}
+.right h2
+{
+    color: black;
+    
+}
+.right h3
+{
+    margin: 5px;
+    padding-left: 20px;
+}
+.muctieuht ul li{
+    padding-left: 20px;
+}
+.skill
+{
+    width: 500px;
+    margin: 1px ;
+    color: #fff;
+}
+
+.bar
+{
+    background: #353b48;
+    display: block;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 3);
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+bar:hover
+{
+    color: #0f0;
+}
+.bar span
+{
+    height: 20px;
+    float: left;
+    background: #0f0;
+    margin: 0 0px;
+    position: relative;
+    transform: skewY(345deg)translateY(-200px) ;
+    animation: animateColor1 10s linear infinite;
+}
+.html
+{
+    width: 80%;
+    
+}
+.css
+{
+    width: 60%;
+    
+}
+.javac
+{
+    width: 30%;
+}
+.english
+{
+    width: 20%;
+}
+.right h2
+{
+    color: #0f0;
+    margin: 0 0px;
+    position: relative;
+    transform: skewY(345deg)translateY(-200px) ;
+    animation: animateColor1 100s linear infinite;
+}
+.none 
+{   
+    font-size: larger;
+    text-transform: uppercase;
+    color: #0f0;
+    margin: 0 0px;
+    position: relative;
+    transform: skewY(345deg)translateY(-200px) ;
+    animation: animateColor1 100s linear infinite;
+    
+}
+#media
+{
+    padding-top: 10px;
+    background-color: #111;
+}
